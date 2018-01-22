@@ -1,0 +1,7 @@
+body:first-of-type .container {
+	margin-top: 5rem;
+}
+
+.jumbotron {
+	background-color: #e5e5ea !important
+}

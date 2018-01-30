@@ -15,14 +15,24 @@
 		<!---->
 
 		<link rel="stylesheet" href="../css/stylesheet.css">
+		<script type="text/javascript" src="../js/script.js">
+		</script>
 	</head>
 	<body>
 		<div class="container">
-			<div class="row" id="nav">
-				<button type="button" class="nav-button btn btn-dark">Mitä on hyvinvointi?</button>
-				<button type="button" class="nav-button btn btn-dark">Miten hyvinvointi vaikuttaa vaikuttaa sinuun</button>
-				<button type="button" class="nav-button btn btn-dark">Miten sinä voit vaikuttaa hyvinvointiisi</button>
-			</div>
+			<nav>
+				<div class="row" id="nav">
+					<button type="button" onclick="changePG('index')" class="nav-button btn btn-teal" id="active">Mitä on hyvinvointi?</button>
+				</div>
+				<div class="row">
+					<button type="button" onclick="changePG('vaikuttaa-sinuun')" class="nav-button btn btn-teal">Miten hyvinvointi vaikuttaa vaikuttaa sinuun</button>
+				</div>
+				<div class="row">
+					<button type="button" onclick="changePG('vaikuta-hyvinvointiisi')" class="nav-button btn btn-teal">Miten sinä voit vaikuttaa hyvinvointiisi</button>
+				</div>
+			</nav>
+			<hr class="my-4">
+
 			<div class="row">
 				<div class="col">
 					<h1 class="display-3">Hyvinvointi</h1>

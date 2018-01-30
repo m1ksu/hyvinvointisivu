@@ -8,4 +8,10 @@ body:first-of-type .container {
 
 button.nav-button {
 	margin: 0.5rem !important;
+	background-color: #20c997;
+	color: white;
+	box-shadow: #0000009a 3px 3px 10px -1px;
 }
+	button.nav-button#active {
+		/* TODO: #activelle jokin joka ilmoittaa ett on aktiivi */
+	}

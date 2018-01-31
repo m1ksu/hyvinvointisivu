@@ -22,11 +22,12 @@ nav {
 		color: white;
 		text-shadow: 0px 0px 3px #00000060;
 		transition: all 0.2s;
-		button.nav-button#active {
-		/* TODO: #activelle jokin joka ilmoittaa että on aktiivi
-		 * sisennä logoa päin?
-		 */
 	}
+
+	button.nav-button#active {
+		/* TODO: #activelle jokin joka ilmoittaa että on aktiivi
+		* sisennä logoa päin?
+		*/
 	}
 
 	@media (min-width: 768px) {
@@ -35,14 +36,14 @@ nav {
 			padding: inherit 1rem;
 			margin-left: 0.5rem;
 			box-shadow: #00000080 3px 3px 6px -1px;
+		} button.nav-button:hover {
+			margin-left: 1rem;
 		}
 
 		button#nav-button-mid {
 			margin-left: 1.5rem;
-		}
-
-		button.nav-button:hover, button.nav-button#nav-button-mid:hover {
-			margin-left: 2rem;
+		} button#nav-button-mid:hover {
+				margin-left: 2rem;
 		}
 	}
 

@@ -48,6 +48,12 @@ button.nav-button {
 		}
 	}
 	@media (max-width: 768px) {
+		* {
+			text-align: center;
+		}
+		footer * {
+			text-align: left;
+		}
 		#logo {
 			display: none;
 		}

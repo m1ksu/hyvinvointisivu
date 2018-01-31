@@ -10,9 +10,8 @@ body:first-of-type .container {
 	font-weight: 300;
 }
 
-.cards h3 {
-	height: 3.5rem;
-	margin-bottom: 1.5rem;
+.cards p {
+	font-weight: 300;
 }
 /* NAV buttons */
 button.nav-button {
@@ -58,4 +57,7 @@ h1, h2, h3, h4, h5 {
 
 :not(.jumbotron) > p {
 	text-shadow: 1px 1px 2px #00000060
+}
+footer {
+	padding: 60 70px
 }

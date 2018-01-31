@@ -23,23 +23,30 @@
 	</head>
 	<body>
 		<div class="container">
-			<nav>
-				<div class="row" id="nav">
-					<button type="button" onclick="changePG('index')" class="nav-button btn btn-teal" id="active">
-						Mitä hyvinvointi on
-					</button>
+
+			<div class="d-flex justify-content-left">
+				<div>
+					<img id="logo" src="../media/logo.svg" alt="logo" style="height:162px;">
 				</div>
-				<div class="row">
-					<button type="button" onclick="changePG('vaikuttaa-sinuun')" class="nav-button btn btn-teal">
-						Miten hyvinvointi vaikuttaa vaikuttaa sinuun
-					</button>
-				</div>
-				<div class="row">
-					<button type="button" onclick="changePG('vaikuta-hyvinvointiisi')" class="nav-button btn btn-teal">
-						Miten sinä voit vaikuttaa hyvinvointiisi
-					</button>
-				</div>
-			</nav>
+				<nav>
+					<div class="row" id="nav">
+						<button type="button" onclick="changePG('index')" class="nav-button btn btn-teal">
+							Mitä hyvinvointi on
+						</button>
+					</div>
+					<div class="row">
+						<button type="button" onclick="changePG('vaikuttaa-sinuun')" id="nav-button-mid" class="nav-button btn btn-teal">
+							Miten hyvinvointi vaikuttaa vaikuttaa sinuun
+						</button>
+					</div>
+					<div class="row">
+						<button type="button" onclick="changePG('vaikuta-hyvinvointiisi')" class="nav-button btn btn-teal">
+							Miten sinä voit vaikuttaa hyvinvointiisi
+						</button>
+					</div>
+				</nav>
+			</div>
+
 			<hr class="my-4">
 
 			<div class="row">
@@ -49,28 +56,85 @@
 				</div>
 			</div>
 
-			<!-- Linkit -->
-			<div class="row mt-4">
+			<!-- Terveyden tyypit" -->
+			<div class="row mt-2 cards">
 				<div class="col">
-					<hr class="my-4">
+					<h1>VERYNICE</h1>
+					<hr class="my-4" />
 				</div>
 			</div>
-			<div class="row mb-4">
-				<div class="col">
-					<div class="jumbotron">
-						<h1>
-							Lue Lisää
-						</h1>
-						<hr class="my-4">
-						<h5>
-							<a href="vaikuttaa-sinuun.html">Miten hyvinvointisi vaikuttaa sinuun</a>
-						</h5>
-						<h5>
-							<a href="vaikuta-hyvinvointiisi.html">Miten sinä voit vaikuttaa hyvinvointiisi</a>
-						</h5>
+			<div class="row margin-bottom-for-h3 cards">
+				<div class="col-md">
+					<h3>Nukkuminen</h3>
+					<p>
+						Nukkuminen on elintärkeää, eikä ihminen elä kovinkaan kauan ilman unta. Riittävä ja hyvä uni parantaa niin ruumillista kuin henkistäkin suorituskykyä, suojaa sairauksilta ja edistää yleistä hyvinvointia. Unen syvyys aivoissa on paikallista ja riippuu aivojen alueiden ja yksittäisten aivosolujen unentarpeesta: mitä enemmän jotain aivojen aluetta on käytetty, sitä syvempään uneen se vaipuu palautuakseen. ruumis palautuu nukkuessaan, sillä elimistö lisää sellaisten hormonien tuotantoa, jotka kiihottavat elintärkeitä aineenvaihduntatapahtumia ja vahvistavat muun muassa immuunijärjestelmää.
+					</p>
+				</div>
+				<div class="col-md">
+					<h3>Liikunta</h3>
+					<p>
+						Reippaalla 20-60 minuutin kävelyllä/lenkillä 5-7 viikossa saa peruskuntoa kohennettua. Päivittäisen liikunnan voi koota pienemmistä palasista, sillä kolme kertaa 10 minuuttia päivässä näyttää tuottavan terveyden kannalta saman hyödyn kuin kerran 30 minuuttia.
+			https://www.terveyskirjasto.fi/terveyskirjasto/tk.koti?p_artikkeli=dlk00934#s2
+
+			Painoa voi pudottaa kuluttamalla energiaa enemmän kuin  syö.
+			Noin puolen tunnin kohtuullisesti kuormittavaa liikuntaa esim. reipasta kävelyä 5–7 päivänä viikossa tai kuormittavaa liikuntaa esim. hölkkää 20–60 minuuttia kolmesti viikossa. Päivittäisen liikunnan voi koota pienemmistä palasista, sillä
+
+					</p>
+				</div>
+			</div>
+			<hr class="my-4" />
+
+			<div class="row margin-bottom-for-h3 cards">
+				<div class="col-md">
+					<h3>Päihderiippuvuus</h3>
+					<p>
+						Päihderiippuvuus eli päihdeaddiktio on riippuvuus päihteeseen, mikä syntyy usean lähekkäisen käytön seurauksena. Fyysisessä riippuvuudessa elimistö on tottunut päihteen saantiin ja saannin loppuessa ihminen saa vieroitusoireita mm. päänsärkyä, väsymystä, masennusta jne. Päihderiippuvuuden hoitoon tarjotaan usein erilaisia vieroitus- ja katkaisuhoitoja, joissa addiktoitunutta autetaan lopettamaan päihteiden käyttö.
+				</div>
+				<div class="col-md">
+					<h3>Elintavat</h3>
+					<p>
+						Elintapojen avulla voi vaikuttaa terveyteen monella tavalla esim. Nukkumalla riittävästi, syömällä terveellisesti, liikkumalla aktiivisesti ja olla käyttämättä aktiivisesti päihteitä.
+					</p>
+				</div>
+				<div class="col-md">
+					<h3>Ravinto</h3>
+					<p>
+						Päivittäin sinun kuuluisi syödä monipuolisesti ja 5-6 kertaa päivässä 3-4 tunnin välein. ⅓ lautasesta kuuluisi olla kasviksia, ⅓ proteiinia, ja ⅓ hiilihydraatteja.
+					</p>
+				</div>
+			</div>
+
+			<br style="line-height: 4rem">
+
+		</div>
+
+
+
+		<footer class="bg-dark text-light container-fluid py-5">
+				<div class="row">
+
+					<div class="col-12 col-md">
+						<img src="../media/footlogo.svg" alt="">
+						<small class="d-block mb-3 text-muted">© 2018-2019</small>
+					</div>
+
+					<div class="col-12 col-md">
+						<h5>Yhteistiedot</h5>
+						<ul class="list-unstyled text-small">
+							<li><a class="text-muted" href="#">Tekijät</a></li>
+							<li><a class="text-muted" href="#">Toc</a></li>
+          </ul>
+					</div>
+
+					<div class="col-12 col-md">
+						<h5>Lue lisää</h5>
+						<ul class="list-unstyled text-small">
+							<li><a class="text-muted" href="#">Miten hyvinvointi vaikuttaa vaikuttaa sinuun</a></li>
+							<li><a class="text-muted" href="#">Miten sinä voit vaikuttaa hyvinvointiisi</a></li>
+          </ul>
 					</div>
 				</div>
-			</div>
-		</div>
+		</footer>
+
 	</body>
 </html>

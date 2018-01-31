@@ -20,11 +20,13 @@ nav {
 		margin: 0.5rem;
 		background-color: #37df89;
 		color: white;
+		border: 1px black dotted;
 		text-shadow: 0px 0px 3px #00000060;
 		transition: all 0.2s;
 	}
 
 	button.nav-button#active {
+		border: 1px black solid;
 		/* TODO: #activelle jokin joka ilmoittaa että on aktiivi
 		* sisennä logoa päin?
 		*/
@@ -38,12 +40,14 @@ nav {
 			box-shadow: #00000080 3px 3px 6px -1px;
 		} button.nav-button:hover {
 			margin-left: 1rem;
+			border: 1px black solid;
 		}
 
 		button#nav-button-mid {
 			margin-left: 1.5rem;
 		} button#nav-button-mid:hover {
 				margin-left: 2rem;
+				border: 1px black solid;
 		}
 	}
 

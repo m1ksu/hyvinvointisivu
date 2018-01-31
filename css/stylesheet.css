@@ -1,32 +1,49 @@
 body:first-of-type .container {
-	margin-top: 5rem;
+	margin-top: 4rem;
 }
 
 .jumbotron {
-	background-color: #e5e5ea !important
+	background-color: #e5e5ea;
+}
+.jumbotron {
+	font-size: 1.2rem;
+	font-weight: 300;
 }
 
-
+.cards h3 {
+	height: 3.5rem;
+	margin-bottom: 1.5rem;
+}
+/* NAV buttons */
 button.nav-button {
 	margin: 0.5rem;
 	background-color: #37df89;
 	color: white;
-	box-shadow: #0000009a 3px 3px 10px -1px;
-	text-shadow: 0px 0px 4px #00000060;
-	transition: box-shadow 0.2s, text-shadow 0.2s, margin 0.3s;
-	margin-left: -1rem;
+	box-shadow: #0000009a 3px 3px 6px -1px;
+	text-shadow: 0px 0px 3px #00000060;
+	transition: box-shadow 0.2s, text-shadow 0.2s, margin 0.2s;
+
 }
-button.nav-button:nth-child(1){
-	margin-left: -0.5rem;
+nav button.nav-button {
+		margin-left: 1.3rem;
+}
+nav {
+	width: 100%;
 }
 	button.nav-button#active {
 		/* TODO: #activelle jokin joka ilmoittaa ett on aktiivi */
 	}
 	button.nav-button:hover {
-		box-shadow: #000000b0 4px 4px 15px -1px;
-		text-shadow: 0px 0px 4px #000000b0;
-			margin-left: 1rem;
+		box-shadow: #000000b0 4px 4px 6px -1px;
+		text-shadow: 0px 0px 3px #000000b0;
+		margin-left: 2rem;
 	}
+
+@media (max-width: 768px) {
+#logo {
+	display:none;
+}
+}
 
 .display-1, .display-2, .display-3, .display-4 {
 	text-shadow: 2px 2px 5px #00000080

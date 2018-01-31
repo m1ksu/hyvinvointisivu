@@ -42,9 +42,9 @@ nav {
 	}
 
 @media (max-width: 768px) {
-#logo {
-	display:none;
-}
+	#logo {
+		display:none;
+	}
 }
 
 .display-1, .display-2, .display-3, .display-4 {

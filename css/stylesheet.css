@@ -48,6 +48,9 @@ button.nav-button {
 		}
 	}
 	@media (max-width: 768px) {
+		* {
+			text-align: center;
+		}
 		#logo {
 			display: none;
 		}

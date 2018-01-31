@@ -23,25 +23,23 @@
 	</head>
 	<body>
 		<div class="container">
-
 			<div class="d-flex justify-content-left">
 				<div>
 					<img id="logo" src="../media/logo.svg" alt="logo" style="height:162px;">
 				</div>
-
 				<nav>
 					<div class="row" id="nav">
-						<button type="button" onclick="changePG('index')" class="nav-button btn btn-teal col-sm-12 col-md-6" id="active">
-							Mitä on Hyvinvointi
+						<button type="button" onclick="changePG('index')" class="nav-button btn btn-teal" id="active">
+							Mitä hyvinvointi on
 						</button>
 					</div>
 					<div class="row">
-						<button type="button" onclick="changePG('vaikuttaa-sinuun')" class="nav-button btn btn-teal col-sm-12 col-md-8">
+						<button type="button" onclick="changePG('vaikuttaa-sinuun')" id="nav-button-mid" class="nav-button btn btn-teal">
 							Miten hyvinvointi vaikuttaa vaikuttaa sinuun
 						</button>
 					</div>
 					<div class="row">
-						<button type="button" onclick="changePG('vaikuta-hyvinvointiisi')" class="nav-button btn btn-teal  col-sm-12 col-md-7">
+						<button type="button" onclick="changePG('vaikuta-hyvinvointiisi')" class="nav-button btn btn-teal">
 							Miten sinä voit vaikuttaa hyvinvointiisi
 						</button>
 					</div>
@@ -50,12 +48,15 @@
 
 			<hr class="my-4">
 
+			<!-- Otsikko -->
 			<div class="row">
 				<div class="col">
 					<h1 class="display-3">Hyvinvointi</h1>
 					<hr class="my-4">
 				</div>
 			</div>
+
+			<!-- Mitä on hyvinvointi? -->
 			<div class="row">
 				<div class="col">
 					<div class="jumbotron">

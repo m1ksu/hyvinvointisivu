@@ -49,9 +49,9 @@ button.nav-button {
 			margin-left: 1rem;
 			border: 1px black solid;
 		}
-		button#nav-button-mid {
+		button.nav-button-mid {
 			margin-left: 1.5rem;
-		} button#nav-button-mid:hover {
+		} button.nav-button-mid:hover {
 				margin-left: 2rem;
 				border: 1px black solid;
 		}
@@ -93,6 +93,6 @@ h1, h2, h3, h4, h5 {
 }
 
 footer {
-	padding-left: 4rem !important;
-	padding-right: 4rem !important;
+	padding-left: 5rem !important;
+	padding-right: 5rem !important;
 }

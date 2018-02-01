@@ -5,10 +5,11 @@ body:first-of-type .container {
 .jumbotron {
 	background-color: #e5e5ea;
 }
-	.jumbotron p {
-		font-size: 1.2rem;
-		font-weight: 300;
-	}
+
+.jumbotron p {
+	font-size: 1.2rem;
+	font-weight: 300;
+}
 
 .cards p {
 	font-weight: 300;
@@ -16,73 +17,72 @@ body:first-of-type .container {
 
 nav {
 	width: 100%;
-}  button.nav-button {
-		margin: 0.5rem;
-		background-color: #37df89;
-		color: white;
-		border: 1px black dotted;
-		text-shadow: 0px 0px 3px #00000060;
-		transition: all 0.2s;
-	}
+}
 
 button.nav-button {
 	margin: 0.5rem;
 	background-color: #37df89;
 	color: white;
+	border: 1px black dotted;
 	text-shadow: 0px 0px 3px #00000060;
-	transition: all 0.2s;
+	transition: all 0.5s;
 }
-	button.nav-button#active {
-		border: 1px black solid;
-		/* TODO: #activelle jokin joka ilmoittaa että on aktiivi
-			* sisennä logoa päin?
-			*/
+
+button.nav-button#active {
+	border: 1px black solid;
+}
+
+button.nav-button:not(#active) {
+	border: 1px black dotted;
+}
+
+@media (min-width: 768px) {
+	button.nav-button {
+		text-align: left;
+		padding: inherit 1rem;
+		margin-left: 0.5rem;
+		box-shadow: #00000080 3px 3px 6px -1px;
 	}
-	@media (min-width: 768px) {
-		button.nav-button {
-			text-align: left;
-			padding: inherit 1rem;
-			margin-left: 0.5rem;
-			box-shadow: #00000080 3px 3px 6px -1px;
-		}
-		button.nav-button:hover {
-			margin-left: 1rem;
-			border: 1px black solid;
-		}
-		button.nav-button-mid {
-			margin-left: 1.5rem;
-		} button.nav-button-mid:hover {
-				margin-left: 2rem;
-				border: 1px black solid;
-		}
+	button.nav-button:hover {
+		margin-left: 1.5rem;
+		border: 1px black solid !important;
 	}
-	@media (max-width: 768px) {
-		* {
-			text-align: center;
-		}
-		footer * {
-			text-align: left;
-		}
-		#logo {
-			display: none;
-		}
-		button.nav-button {
-			font-size: 1.2rem;
-			padding: 0.5rem;
-			margin: 0.4rem auto;
-			width: 100%;
-			box-shadow: #00000080 0px 4px 6px -1px;
-		}
-		button.nav-button:hover {
-			width: 90%;
-		}
+	button.nav-button-mid {
+		margin-left: 1.5rem;
 	}
+	button.nav-button-mid:hover {
+		margin-left: 2.5rem;
+	}
+}
+
+@media (max-width: 768px) {
+	* {
+		text-align: center;
+	}
+	footer * {
+		text-align: left;
+	}
+	#logo {
+		display: none;
+	}
+	button.nav-button {
+		font-size: 1.2rem;
+		padding: 0.5rem;
+		margin: 0.4rem auto;
+		width: 100%;
+		box-shadow: #00000080 0px 4px 6px -1px;
+	}
+	button.nav-button:hover {
+		width: 90%;
+	}
+}
 
 /* Bootstrap muutoksia */
 
 .display-1, .display-2, .display-3, .display-4 {
 	text-shadow: 2px 2px 5px #00000080
 }
+
 h1, h2, h3, h4, h5 {
 	font-weight: lighter;
 	text-shadow: 1px 1px 3px #00000090

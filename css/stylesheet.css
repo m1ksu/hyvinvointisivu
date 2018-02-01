@@ -16,7 +16,14 @@ body:first-of-type .container {
 
 nav {
 	width: 100%;
-}
+}  button.nav-button {
+		margin: 0.5rem;
+		background-color: #37df89;
+		color: white;
+		border: 1px black dotted;
+		text-shadow: 0px 0px 3px #00000060;
+		transition: all 0.2s;
+	}
 
 button.nav-button {
 	margin: 0.5rem;
@@ -26,6 +33,7 @@ button.nav-button {
 	transition: all 0.2s;
 }
 	button.nav-button#active {
+		border: 1px black solid;
 		/* TODO: #activelle jokin joka ilmoittaa että on aktiivi
 			* sisennä logoa päin?
 			*/
@@ -39,12 +47,13 @@ button.nav-button {
 		}
 		button.nav-button:hover {
 			margin-left: 1rem;
+			border: 1px black solid;
 		}
 		button#nav-button-mid {
 			margin-left: 1.5rem;
-		}
-		button#nav-button-mid:hover {
-			margin-left: 2rem;
+		} button#nav-button-mid:hover {
+				margin-left: 2rem;
+				border: 1px black solid;
 		}
 	}
 	@media (max-width: 768px) {

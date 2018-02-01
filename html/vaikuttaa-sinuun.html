@@ -1,137 +1,126 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Hyvinvointi - Etusivu</title>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<meta charset="utf-8">
+	<title>Hyvinvointi - Etusivu</title>
 
-		<!-- favicon -->
-		<link rel="shortcut icon" href="../media/logo.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<!-- Bootstrap -->
-		<link rel="stylesheet" href="../css/bootstrap.min.css">
-		<!-- Boostrappiin tarvittavat jutut -->
-			<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
-		<!---->
+	<!-- favicon -->
+	<link rel="shortcut icon" href="../media/logo.ico" />
 
-		<link rel="stylesheet" href="../css/stylesheet.css">
-		<script type="text/javascript" src="../js/script.js">
-		</script>
-	</head>
-	<body>
-		<div class="container">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<!-- Boostrappiin tarvittavat jutut -->
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+	<!---->
 
-			<div class="d-flex justify-content-left">
-				<div>
-					<img id="logo" src="../media/logo.svg" alt="logo" style="height:162px;">
-				</div>
-				<nav>
-					<div class="row" id="nav">
-						<button type="button" onclick="changePG('index')" class="nav-button btn btn-teal">
-								Mitä hyvinvointi on
-							</button>
-					</div>
-					<div class="row">
-						<button type="button" onclick="changePG('vaikuttaa-sinuun')" class="nav-button btn btn-teal nav-button-mid" id="active">
-								Miten hyvinvointi vaikuttaa vaikuttaa sinuun
-							</button>
-					</div>
-					<div class="row">
-						<button type="button" onclick="changePG('vaikuta-hyvinvointiisi')" class="nav-button btn btn-teal">
-								Miten sinä voit vaikuttaa hyvinvointiisi
-							</button>
-					</div>
-				</nav>
-			</div>
+	<link rel="stylesheet" href="../css/stylesheet.css">
+	<script type="text/javascript" src="../js/script.js">
+	</script>
+</head>
 
-			<hr class="my-4">
-
-			<div class="row">
-				<div class="col">
-					<h1 class="display-3">Hyvinvointi</h1>
-					<hr class="my-4">
-				</div>
+<body>
+	<div class="container">
+		<nav>
+			<div class="row" id="nav">
+				<button type="button" onclick="changePG('index')" class="nav-button btn btn-teal" id="active">
+						Mitä hyvinvointi on
+					</button>
 			</div>
 			<div class="row">
-				<div class="col">
-					<div class="jumbotron">
-						<h1>Mitä on hyvinvointi?</h1>
-						<hr class="my-3">
-						<p>
-							Vaikka hyvinvoinnilla on monia määritelmiä ja käsitteitä, voidaan yleisesti sano, että hyvinvointi tarkoittaa henkistä vaurautta ja hyvää tervydentilaa.
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<!-- Terveyden tyypit" -->
-			<div class="row mt-2">
-				<div class="col">
-					<h1>Hyvinvoinnin tyyppejä</h1>
-					<hr class="my-4" />
-				</div>
+				<button type="button" onclick="changePG('vaikuttaa-sinuun')" class="nav-button btn btn-teal">
+						Miten hyvinvointi vaikuttaa vaikuttaa sinuun
+					</button>
 			</div>
 			<div class="row">
-				<div class="col">
-					<h3>Fyysinen terveys</h3>
-				</div>
-				<div class="col">
-					<h3>Psyykkinen terveys</h3>
-				</div>
-				<div class="col">
-					<h3>Sosiaalinen terveys</h3>
-				</div>
+				<button type="button" onclick="changePG('vaikuta-hyvinvointiisi')" class="nav-button btn btn-teal">
+						Miten sinä voit vaikuttaa hyvinvointiisi
+					</button>
 			</div>
-			<div class="row mt-2">
-				<div class="col">
+		</nav>
+		<hr class="my-4">
+
+		<div class="row">
+			<div class="col">
+				<h1 class="display-3">Hyvinvointi</h1>
+				<hr class="my-4">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<div class="jumbotron">
+					<h1>Mitä on hyvinvointi?</h1>
+					<hr class="my-3">
 					<p>
-						Ihminen on fyysisesti terve jos hänen elimistönsä toimii oikein. Silloin kun keho toimii moitteettomasti, sydän jaksaa pumpata ja keuhkot toimivat, eikä ihmisillä ole usein irtotauteja.
-					</p>
-				</div>
-				<div class="col">
-					<p>
-						Psyykkinen terveys eli henkiinen hyvinvointi saa lähtökohtansa ihmisen ei-näkyvästä osasta eli ihmisen sisimmästä.
-					</p>
-				</div>
-				<div class="col">
-					<p>
-						Sosiaalinen terveys liittyy aina sekä ihmiseen itseensä että muihin ihmisiin. Sitä voidaan arvioida juuri ihmisten välisiä suhteita arvioimalla. Se on vuorovaikutustaitoja ja selviytymistä tavanomaisista, mutta myös epätavanomaisista tilanteista.
+						Vaikka hyvinvoinnilla on monia määritelmiä ja käsitteitä, voidaan yleisesti sano, että hyvinvointi tarkoittaa henkistä vaurautta ja hyvää tervydentilaa.
 					</p>
 				</div>
 			</div>
-
-			<br style="line-height: 4rem">
-
 		</div>
 
-		<footer class="bg-dark text-light container-fluid py-5">
-				<div class="row">
+		<!-- Terveyden tyypit" -->
+		<div class="row mt-2">
+			<div class="col">
+				<h1>Hyvinvoinnin tyyppejä</h1>
+				<hr class="my-4" />
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<h3>Fyysinen terveys</h3>
+			</div>
+			<div class="col">
+				<h3>Psyykkinen terveys</h3>
+			</div>
+			<div class="col">
+				<h3>Sosiaalinen terveys</h3>
+			</div>
+		</div>
+		<div class="row mt-2">
+			<div class="col">
+				<p>
+					Ihminen on fyysisesti terve jos hänen elimistönsä toimii oikein. Silloin kun keho toimii moitteettomasti, sydän jaksaa pumpata ja keuhkot toimivat, eikä ihmisillä ole usein irtotauteja.
+				</p>
+			</div>
+			<div class="col">
+				<p>
+					Psyykkinen terveys eli henkiinen hyvinvointi saa lähtökohtansa ihmisen ei-näkyvästä osasta eli ihmisen sisimmästä.
+				</p>
+			</div>
+			<div class="col">
+				<p>
+					Sosiaalinen terveys liittyy aina sekä ihmiseen itseensä että muihin ihmisiin. Sitä voidaan arvioida juuri ihmisten välisiä suhteita arvioimalla. Se on vuorovaikutustaitoja ja selviytymistä tavanomaisista, mutta myös epätavanomaisista tilanteista.
+				</p>
+			</div>
+		</div>
 
-					<div class="col-12 col-md">
-						<img src="../media/footlogo.svg" alt="">
-						<small class="d-block mb-3 text-muted">© 2018-2019</small>
-					</div>
-
-					<div class="col-12 col-md">
-						<h5>Yhteistiedot</h5>
-						<ul class="list-unstyled text-small">
-							<li><a class="text-muted" href="#">Tekijät</a></li>
-							<li><a class="text-muted" href="#">Toc</a></li>
-          </ul>
-					</div>
-
-					<div class="col-12 col-md">
-						<h5>Lue lisää</h5>
-						<ul class="list-unstyled text-small">
-							<li><a class="text-muted" href="#">Miten hyvinvointi vaikuttaa vaikuttaa sinuun</a></li>
-							<li><a class="text-muted" href="#">Miten sinä voit vaikuttaa hyvinvointiisi</a></li>
-          </ul>
-					</div>
+		<!-- Linkit -->
+		<div class="row mt-4">
+			<div class="col">
+				<hr class="my-4">
+			</div>
+		</div>
+		<div class="row mb-4">
+			<div class="col">
+				<div class="jumbotron">
+					<h1>
+							Lue Lisää
+						</h1>
+					<hr class="my-4">
+					<h5>
+							<a href="vaikuttaa-sinuun.html">Miten hyvinvointisi vaikuttaa sinuun</a>
+						</h5>
+					<h5>
+							<a href="vaikuta-hyvinvointiisi.html">Miten sinä voit vaikuttaa hyvinvointiisi</a>
+						</h5>
 				</div>
-		</footer>
+			</div>
+		</div>
+	</div>
+</body>
 
-	</body>
 </html>

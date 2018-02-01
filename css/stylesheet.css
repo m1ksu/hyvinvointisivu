@@ -60,6 +60,9 @@ button.nav-button {
 		* {
 			text-align: center;
 		}
+		footer * {
+			text-align: left;
+		}
 		#logo {
 			display: none;
 		}

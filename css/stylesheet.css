@@ -63,13 +63,7 @@ nav {
 }
 
 .cards *:hover * {
-	text-shadow:
-		+1px +1px 1px rgba(0, 0, 0, 0.7),
-		-1px -1px 1px rgba(0, 0, 0, 0.7),
-		+0px -1px 1px rgba(0, 0, 0, 0.7),
-		-1px +0px 1px rgba(0, 0, 0, 0.7),
-		0     0   1px rgba(0, 0, 0, 1);
-	color: white;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
 }
 
 .cards .ft::after {

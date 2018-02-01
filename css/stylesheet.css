@@ -11,48 +11,72 @@ body:first-of-type .container {
 	font-weight: 300;
 }
 
-
 .marketing {
 	text-align: center;
 }
+
 .col-lg-4 {
 	margin-bottom: 1.2rem;
 }
+
 nav {
 	width: 100%;
 }
 
-
 /* cards */
+
 .cards p {
 	font-weight: 300;
 }
-.cards .col-md *,.cards .col-lg * {
+
+.cards .col-md *, .cards .col-lg * {
 	margin: 1.5rem;
 }
-.cards .col-md *:first-child, .cards .col-lg *:first-child {margin-bottom: 0;}
-.cards .col-md *:last-child, .cards .col-lg *:last-child  {margin-top: 0.3rem;}
 
-.cards .col-md::after, .cards .col-lg::after  {
-	margin: 1rem;
-	border-radius: 1.2rem;
-  content: "";
-	background-repeat: no-repeat;
-	background-size:cover;
-  opacity: 0.15;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-	transition: ALL 0.2s;
+.cards .col-md *:first-child, .cards .col-lg *:first-child {
+	margin-bottom: 0;
 }
 
-/* Mita on hyvinvointi */
-.cards .ft::after {background-image: url(../media/psyhicalhealth.jpg);}
-.cards .ht::after {background-image: url(../media/mental-health.jpg);}
-.cards .st::after {background-image: url(../media/socialhealth.png);}
+.cards .col-md *:last-child, .cards .col-lg *:last-child {
+	margin-top: 0.3rem;
+}
+
+.cards *::after {
+	margin: 1rem;
+	border-radius: 1.2rem;
+	content: "";
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.15;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+	transition: all 0.2s;
+}
+
+.cards *:hover::after {
+	filter: contrast(60%) blur(1px);
+	border-radius: 0.2rem;
+}
+
+.cards *:hover * {
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+}
+
+.cards .ft::after {
+	background-image: url(../media/psyhicalhealth.jpg);
+}
+
+.cards .ht::after {
+	background-image: url(../media/mental-health.jpg);
+}
+
+.cards .st::after {
+	background-image: url(../media/socialhealth.png);
+}
 
 /* Vaikuta Hyvinvointiisi */
 .cards .nu::after {background-image: url(../media/man-sleeping.jpg);}
@@ -66,8 +90,32 @@ nav {
 .cards .hu::after {background-image: url(../media/huume.jpg);}
 .cards .ma::after {background-image: url(../media/depression.jpg);}
 
+.cards .nu::after {
+	background-image: url(../media/man-sleeping.jpg);
+}
+
+.cards .li::after {
+	background-image: url(../media/liikunta.jpg);
+}
+
+.cards .hu::after {
+	background-image: url(../media/huume.jpg);
+}
+
+.cards .et::after {
+	background-image: url(../media/juliano-gamergrill.jpeg);
+}
+
+.cards .ra::after {
+	background-image: url(../media/foodporn2.jpg);
+}
+
+.cards .li::after {
+	background-image: url(../media/liikunta.jpg);
+}
+
 .cards .col-md:hover::after, .cards .col-lg:hover::after {
-  opacity: 0.35;
+	opacity: 0.35;
 }
 
 /* haastattelu */
@@ -77,7 +125,6 @@ nav {
 .haastattelu span {
 	color: red;
 }
-
 
 button.nav-button {
 	margin: 0.5rem;
@@ -134,14 +181,8 @@ button.nav-button:not(#active) {
 	button.nav-button:hover {
 		width: 90%;
 	}
-
 }
 
-@media (max-width: 992px) {
-	.hide-lg {
-		display: none !important;
-	}
-}
 /* Bootstrap muutoksia */
 
 .display-1, .display-2, .display-3, .display-4 {

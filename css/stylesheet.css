@@ -13,7 +13,12 @@ body:first-of-type .container {
 .cards p {
 	font-weight: 300;
 }
-
+.marketing {
+	text-align: center;
+}
+.col-lg-4 {
+	margin-bottom: 1.2rem;
+}
 nav {
 	width: 100%;
 }  button.nav-button {

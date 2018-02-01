@@ -25,23 +25,28 @@
 
 <body>
 	<div class="container">
-		<nav>
-			<div class="row" id="nav">
-				<button type="button" onclick="changePG('index')" class="nav-button btn btn-teal" id="active">
+		<div class="d-flex justify-content-left">
+			<div>
+				<img id="logo" src="../media/logo.svg" alt="logo" style="height:162px;">
+			</div>
+			<nav>
+				<div class="row" id="nav">
+					<button type="button" onclick="changePG('index')" class="nav-button btn btn-teal">
 						Mitä hyvinvointi on
 					</button>
-			</div>
-			<div class="row">
-				<button type="button" onclick="changePG('vaikuttaa-sinuun')" class="nav-button btn btn-teal">
+				</div>
+				<div class="row">
+					<button type="button" onclick="changePG('vaikuttaa-sinuun')" class="nav-button btn btn-teal nav-button-mid" id="active">
 						Miten hyvinvointi vaikuttaa vaikuttaa sinuun
 					</button>
-			</div>
-			<div class="row">
-				<button type="button" onclick="changePG('vaikuta-hyvinvointiisi')" class="nav-button btn btn-teal">
+				</div>
+				<div class="row">
+					<button type="button" onclick="changePG('vaikuta-hyvinvointiisi')" class="nav-button btn btn-teal">
 						Miten sinä voit vaikuttaa hyvinvointiisi
 					</button>
-			</div>
-		</nav>
+				</div>
+			</nav>
+		</div>
 		<hr class="my-4">
 
 		<div class="row">
@@ -50,77 +55,57 @@
 				<hr class="my-4">
 			</div>
 		</div>
-		<div class="row">
-			<div class="col">
-				<div class="jumbotron">
-					<h1>Mitä on hyvinvointi?</h1>
-					<hr class="my-3">
-					<p>
-						Vaikka hyvinvoinnilla on monia määritelmiä ja käsitteitä, voidaan yleisesti sano, että hyvinvointi tarkoittaa henkistä vaurautta ja hyvää tervydentilaa.
-					</p>
-				</div>
-			</div>
-		</div>
-
-		<!-- Terveyden tyypit" -->
-		<div class="row mt-2">
-			<div class="col">
-				<h1>Hyvinvoinnin tyyppejä</h1>
-				<hr class="my-4" />
-			</div>
-		</div>
-		<div class="row">
-			<div class="col">
-				<h3>Fyysinen terveys</h3>
-			</div>
-			<div class="col">
-				<h3>Psyykkinen terveys</h3>
-			</div>
-			<div class="col">
-				<h3>Sosiaalinen terveys</h3>
-			</div>
-		</div>
-		<div class="row mt-2">
-			<div class="col">
+		<div class="row margin-bottom-for-h3">
+			<div class="col-lg">
+				<h3>Liikunta</h3>
 				<p>
-					Ihminen on fyysisesti terve jos hänen elimistönsä toimii oikein. Silloin kun keho toimii moitteettomasti, sydän jaksaa pumpata ja keuhkot toimivat, eikä ihmisillä ole usein irtotauteja.
+					Suosituksien mukaan kaikkien 13-18-vuotiaiden tulisi saada ainakin tunti reipasta liikuntaa joka päivä, mutta niin tekee vain noin kymmenes teineistä. Miksi? Runsas ja säännöllinen liikunta parantaa sinua fyysisesti ja henkisesti monella tavalla. Se ehkäisee
+					sydänsairauksia, edistää toimintakykyä ja parantaa aivojen verenkiertoa ja parantaa mielialaasi. Sinun kannattaisi liikkua aina kun voit!
+					<br />&nbsp;&nbsp;&nbsp;&nbsp; Liikunnan puute ei siis oletettavasti ole hyvä asia. Se voi johtaa liikalihavuuteen ja vakaviin sairauksiin, pahimmillaan jopa kuolemaan. Ihmisillä, joiden päivittäinen liikunta oli vain kahdenkymmenen minuutin kävely,
+					oli jopa 30 prosentin pienempi todennäköisyys kuolla kuin niillä, jotka eivät liiku lainkaan. Liikunnan puutteen uskotaan johtaneen 676 000 ihmisen kuolemaan Euroopassa 2008.
 				</p>
 			</div>
-			<div class="col">
+			<div class="col-lg">
+				<h3>Päihteet</h3>
 				<p>
-					Psyykkinen terveys eli henkiinen hyvinvointi saa lähtökohtansa ihmisen ei-näkyvästä osasta eli ihmisen sisimmästä.
+					Päihde on yleisnimitys kaikille kemiallisille aineille, jotka käytettyään aiheuttavat päihtymyksen tunteen. Päihteitä ovat tupakka, nuuska, alkoholi, huumausaineet, eräät lääkkeet sekä muut päihdyttävissä tarkoituksessa käytetyt aineet esim. liimat. Päihteet
+					usein vaikuttavat mm. tunteisiin, ajatteluun ja käyttäytymiseen. Päihteet ovat melkein aina pahaksi ihmiselle, ja monien päihteiden liiallinen käyttö voi johtaa jopa kuolemaan.
 				</p>
 			</div>
-			<div class="col">
+			<div class="col-lg">
+				<h3>Masennus</h3>
 				<p>
-					Sosiaalinen terveys liittyy aina sekä ihmiseen itseensä että muihin ihmisiin. Sitä voidaan arvioida juuri ihmisten välisiä suhteita arvioimalla. Se on vuorovaikutustaitoja ja selviytymistä tavanomaisista, mutta myös epätavanomaisista tilanteista.
+					Masennus on sairaus, joka voi johtua perinnöllisistä, osin lapsuuden aikaisista ja osin vallitsevan elämäntilanteen mukanaan tuomista tekijöistä. Masennuksen näkeminen sairautena on tärkeää siksi, että se auttaa ymmärtämään kyseessä olevan vakavan, kivuliaan,
+					todellisen ja ihmisen omasta tahdosta riippumattoman ongelman. Hoitamaton masennus aiheuttaa väsymystä, nukkumisvaikeuksia, itsesääliä, itsetuhoisia ajatuksia ja päihdekäyttöä.
 				</p>
-			</div>
-		</div>
-
-		<!-- Linkit -->
-		<div class="row mt-4">
-			<div class="col">
-				<hr class="my-4">
-			</div>
-		</div>
-		<div class="row mb-4">
-			<div class="col">
-				<div class="jumbotron">
-					<h1>
-							Lue Lisää
-						</h1>
-					<hr class="my-4">
-					<h5>
-							<a href="vaikuttaa-sinuun.html">Miten hyvinvointisi vaikuttaa sinuun</a>
-						</h5>
-					<h5>
-							<a href="vaikuta-hyvinvointiisi.html">Miten sinä voit vaikuttaa hyvinvointiisi</a>
-						</h5>
-				</div>
 			</div>
 		</div>
 	</div>
+	<footer class="bg-dark text-light container-fluid py-5">
+		<div class="row">
+
+			<div class="col-12 col-md">
+				<img src="../media/footlogo.svg" alt="">
+				<small class="d-block mb-3 text-muted">© 2018-2019</small>
+			</div>
+
+			<div class="col-12 col-md">
+				<h5>Yhteistiedot</h5>
+				<ul class="list-unstyled text-small">
+					<li><a class="text-muted" href="tekijat.html">Tekijät</a></li>
+				</ul>
+			</div>
+
+			<div class="col-12 col-md">
+				<h5>Lue lisää</h5>
+				<ul class="list-unstyled text-small">
+					<li><a class="text-muted" href="index.html">Mitä on hyvinvointi</a></li>
+					<li><a class="text-muted" href="vaikuttaa-sinuun.html">Miten hyvinvointi vaikuttaa vaikuttaa sinuun</a></li>
+					<li><a class="text-muted" href="vaikuta-hyvinvointiisi.html">Miten sinä voit vaikuttaa hyvinvointiisi</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
 </body>
 
 </html>

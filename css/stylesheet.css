@@ -70,6 +70,14 @@ nav {
   opacity: 0.35;
 }
 
+/* haastattelu */
+.haastattelu p {
+	color: green;
+}
+.haastattelu span {
+	color: red;
+}
+
 
 button.nav-button {
 	margin: 0.5rem;

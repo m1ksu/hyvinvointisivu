@@ -11,9 +11,7 @@ body:first-of-type .container {
 	font-weight: 300;
 }
 
-.cards p {
-	font-weight: 300;
-}
+
 .marketing {
 	text-align: center;
 }
@@ -23,6 +21,47 @@ body:first-of-type .container {
 nav {
 	width: 100%;
 }
+
+
+/* cards */
+.cards p {
+	font-weight: 300;
+}
+.cards .col-md * {
+	margin: 1.5rem;
+}
+.cards .col-md *:first-child {margin-bottom: 0;}
+.cards .col-md *:last-child {margin-top: 0.3rem;}
+
+.cards .col-md::after {
+	margin: 1rem;
+	border-radius: 1.2rem;
+  content: "";
+	background-repeat: no-repeat;
+	background-size:cover;
+  opacity: 0.15;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+	transition: ALL 0.2s;
+}
+.cards .nu::after {background-image: url(../media/man-sleeping.jpg);}
+.cards .li::after {background-image: url(../media/liikunta.jpg);}
+.cards .hu::after {background-image: url(../media/huume.jpg);}
+.cards .et::after {background-image: url(../media/juliano-gamergrill.jpeg);}
+.cards .ra::after {background-image: url(../media/foodporn2.jpg);}
+.cards .li::after {background-image: url(../media/liikunta.jpg);}
+
+.cards .col-md:hover::after {
+  opacity: 0.35;
+}
+ .cards .col-md:hover {
+
+ }
+
 
 button.nav-button {
 	margin: 0.5rem;

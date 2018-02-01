@@ -70,6 +70,16 @@ nav {
 }
 
 /* Vaikuta Hyvinvointiisi */
+.cards .nu::after {background-image: url(../media/man-sleeping.jpg);}
+.cards .li::after {background-image: url(../media/liikunta.jpg);}
+.cards .hu::after {background-image: url(../media/huume.jpg);}
+.cards .et::after {background-image: url(../media/juliano-gamergrill.jpeg);}
+.cards .ra::after {background-image: url(../media/foodporn2.jpg);}
+
+/* Vaikuttaa sinuun */
+.cards .li::after {background-image: url(../media/liikunta.jpg);}
+.cards .hu::after {background-image: url(../media/huume.jpg);}
+.cards .ma::after {background-image: url(../media/depression.jpg);}
 
 .cards .nu::after {
 	background-image: url(../media/man-sleeping.jpg);

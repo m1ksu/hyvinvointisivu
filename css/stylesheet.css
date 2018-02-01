@@ -27,13 +27,13 @@ nav {
 .cards p {
 	font-weight: 300;
 }
-.cards .col-md * {
+.cards .col-md *,.cards .col-lg * {
 	margin: 1.5rem;
 }
-.cards .col-md *:first-child {margin-bottom: 0;}
-.cards .col-md *:last-child {margin-top: 0.3rem;}
+.cards .col-md *:first-child, .cards .col-lg *:first-child {margin-bottom: 0;}
+.cards .col-md *:last-child, .cards .col-lg *:last-child  {margin-top: 0.3rem;}
 
-.cards .col-md::after {
+.cards .col-md::after, .cards .col-lg::after  {
 	margin: 1rem;
 	border-radius: 1.2rem;
   content: "";
@@ -48,6 +48,13 @@ nav {
   z-index: -1;
 	transition: ALL 0.2s;
 }
+
+/* Mita on hyvinvointi */
+.cards .ft::after {background-image: url(../media/psyhicalhealth.jpg);}
+.cards .ht::after {background-image: url(../media/mental-health.jpg);}
+.cards .st::after {background-image: url(../media/socialhealth.png);}
+
+/* Vaikuta Hyvinvointiisi */
 .cards .nu::after {background-image: url(../media/man-sleeping.jpg);}
 .cards .li::after {background-image: url(../media/liikunta.jpg);}
 .cards .hu::after {background-image: url(../media/huume.jpg);}
@@ -55,12 +62,9 @@ nav {
 .cards .ra::after {background-image: url(../media/foodporn2.jpg);}
 .cards .li::after {background-image: url(../media/liikunta.jpg);}
 
-.cards .col-md:hover::after {
+.cards .col-md:hover::after, .cards .col-lg:hover::after {
   opacity: 0.35;
 }
- .cards .col-md:hover {
-
- }
 
 
 button.nav-button {

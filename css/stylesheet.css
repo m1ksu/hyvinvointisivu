@@ -41,7 +41,7 @@ nav {
 	margin-top: 0.3rem;
 }
 
-.cards .col-md::after, .cards .col-lg::after {
+.cards *::after {
 	margin: 1rem;
 	border-radius: 1.2rem;
 	content: "";
@@ -54,7 +54,22 @@ nav {
 	right: 0;
 	position: absolute;
 	z-index: -1;
-	transition: ALL 0.2s;
+	transition: all 0.2s;
+}
+
+.cards *:hover::after {
+	filter: contrast(60%) blur(1px);
+	border-radius: 0.2rem;
+}
+
+.cards *:hover * {
+	text-shadow:
+		+1px +1px 1px rgba(0, 0, 0, 0.7),
+		-1px -1px 1px rgba(0, 0, 0, 0.7),
+		+0px -1px 1px rgba(0, 0, 0, 0.7),
+		-1px +0px 1px rgba(0, 0, 0, 0.7),
+		0     0   1px rgba(0, 0, 0, 1);
+	color: white;
 }
 
 .cards .ft::after {

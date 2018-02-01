@@ -60,7 +60,11 @@ nav {
 .cards .hu::after {background-image: url(../media/huume.jpg);}
 .cards .et::after {background-image: url(../media/juliano-gamergrill.jpeg);}
 .cards .ra::after {background-image: url(../media/foodporn2.jpg);}
+
+/* Vaikuttaa sinuun */
 .cards .li::after {background-image: url(../media/liikunta.jpg);}
+.cards .hu::after {background-image: url(../media/huume.jpg);}
+.cards .ma::after {background-image: url(../media/depression.jpg);}
 
 .cards .col-md:hover::after, .cards .col-lg:hover::after {
   opacity: 0.35;
